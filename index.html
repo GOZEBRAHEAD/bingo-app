@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <script src="https://kit.fontawesome.com/c39033e14b.js" crossorigin="anonymous"></script>
+
+    <title>Bingo APP</title>
+</head>
+<body>
+
+    <div class="layout">
+        
+        <div class="layout__title">
+            <h1>Let's play bingo!</h1>
+        </div>
+
+        <div class="layout__random">
+            <p class="count__text" id="user-plays">Remaining plays: <span>20</span>/20</p>
+
+            <div class="layout__random__board" id="random-board">
+            </div>
+        </div>
+
+        <div class="layout__user">
+            <p class="count__text" id="user-score">Score: <span>0</span>/10</p>
+            
+            <div class="layout__user__board" id="user-board">
+            </div>
+        </div>
+
+        <div class="layout__buttons">
+            <div>
+                <button id="btn-play">Play</button>
+                <button id="btn-reset">Reset</button>
+            </div>
+        </div>
+
+        <footer>
+            <a href="https://github.com/GOZEBRAHEAD" aria-label="GitHub" target="_blank" rel="noreferrer">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/luciano-nieves/" aria-label="Linkedin" target="_blank" rel="noreferrer">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com/lucho_nieves/" aria-label="Instagram" target="_blank" rel="noreferrer">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </footer>
+
+    </div>
+
+    <div class="modal" id="modal-endGame">
+
+        <div class="modal__content">
+            <p id="modal-text"></p>
+            <span class="modal__content__close" id="modal-close">&times;</span>
+        </div>
+
+    </div>
+
+    <script src="./js/index.js"></script>
+
+</body>
+</html>
